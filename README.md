@@ -16,7 +16,7 @@ Add a new Step in your `.drone.yml` file:
   image: macchie/drone-matternotify
   settings:
     webhook: "https://your.mattermost.hosted/hooks/123456567657567567"
-    channel: "#m-testing"
+    channel: "#example-channel"
     username: "MatterNotify Custom Username"
     icon_url: "https://i.postimg.cc/VkyND0vs/bot.png"
     title: "A new hope on {{DRONE_REPO_OWNER}}/{{DRONE_REPO_NAME}}, version is now {{DRONE_TAG}}!"
