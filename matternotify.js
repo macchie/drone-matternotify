@@ -77,6 +77,10 @@ class MatterNotify {
       }
     );
 
+    console.log(`Sending Mattermost Notification...`)
+    console.log(body)
+    console.log(``)
+
     console.log(`Mattermost Response: ${resp.statusText}`);
   }
 
@@ -104,5 +108,5 @@ class MatterNotify {
 try {
   MatterNotify.execute();
 } catch (error) {
-  console.log(`Error!`, error);
+  console.log(`Mattermost Send Error:`, error);
 }
