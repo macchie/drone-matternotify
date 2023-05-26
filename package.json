@@ -1,0 +1,21 @@
+{
+  "name": "@macchie7/drone-matternotify",
+  "version": "0.0.1",
+  "description": "Easy Mattermost Notification with Incoming WebHooks",
+  "bin": {
+    "matternotify": "matternotify.js"
+  },
+  "author": "Andrea Macchieraldo <a.macchieraldo@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "keywords": [
+    "notification",
+    "mattermost",
+    "webhooks"
+  ]
+}
