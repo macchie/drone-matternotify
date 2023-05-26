@@ -12,12 +12,12 @@ class MatterNotify {
     }
 
     if (!process.env.PLUGIN_WEBHOOK) {
-      console.log(`MN_WEBHOOK ENV variable not set!`);
+      console.log(`PLUGIN_WEBHOOK ENV variable not set!`);
       return;
     }
 
     if (!process.env.PLUGIN_CHANNEL) {
-      console.log(`MN_CHANNEL ENV variable not set!`);
+      console.log(`PLUGIN_CHANNEL ENV variable not set!`);
       return;
     }
 
@@ -95,10 +95,6 @@ class MatterNotify {
       }
 
       _text = `:email: [${_mailtoLabel}](mailto:${process.env.PLUGIN_MAILTO}?subject=${encodeURIComponent(_mailtoSubject)}&cc=${_ccAddrs.join(',')})\n\n`;
-    } else {
-      if (process.env.PLUGIN_DEBUG === 'true') {
-        console.log(`MN_MAILTO ENV variable not set or invalid!`);
-      }
     }
 
     return _text;
