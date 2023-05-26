@@ -47,7 +47,7 @@ class MatterNotify {
 
     const body = { 
       channel: process.env.PLUGIN_CHANNEL,
-      username: process.env.PLUGIN_USERNAME || 'MatterNotify',
+      username: process.env.PLUGIN_USERNAME,
       icon_url: process.env.PLUGIN_ICON_URL || 'https://i.postimg.cc/G2J204Ls/notification-bell.png',
     }
 
